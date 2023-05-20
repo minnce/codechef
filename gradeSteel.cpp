@@ -2,28 +2,28 @@
 using namespace std;
 
 int main() {
-	int t,a,c;
-	float b;
+	int t;
+	float a,b,c;
     cin >> t;
     for (int i = 0; i < t; i++) {
         cin >> a >> b >> c;
         if (a > 50 && b < .7 && c > 5600) {
-            cout << 10 << endl;
+            cout << "10" << endl;
         }
-        else if (a > 50 && c > 5600) {
-            cout << 9 << endl;
+        else if (a > 50 && b < .7) {
+            cout << "9" << endl;
         }
         else if (b < .7 && c > 5600) {
-            cout << 8 << endl;
+            cout << "8" << endl;
         }
         else if (a > 50 && c > 5600) {
-            cout << 7 << endl;
+            cout << "7" << endl;
         }
         else if (a > 50 || b < .7 || c > 5600) {
-            cout << 6 << endl;
+            cout << "6" << endl;
         }
         else {
-            cout << 5 << endl;
+            cout << "5" << endl;
         }
     }
 	return 0;
