@@ -2,19 +2,12 @@
 using namespace std;
 
 int main() {
-	int t, n;
+	int t;
 	cin >> t;
 	while (t--) {
+	    long long n;
 	    cin >> n;
-	    int tot = 0;
-	    for (int i = 1; i < n+1; i++) {
-	        for (int j = 1; j < n+1; j++) {
-	            if ((i+j)%2==1) {
-	                tot++;
-	            }
-	        }
-	    }
-	    cout << tot << endl;
+	    cout << (n*n/2) << endl;
 	}
 	return 0;
 }
