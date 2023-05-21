@@ -1,8 +1,9 @@
 #include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	double a, b;
+	float a, b;
 	string c;
 	cin >> a >> b >> c;
 	if (c == "+" ) {
@@ -15,7 +16,7 @@ int main() {
 	    cout << a*b << endl;
 	}
 	else {
-	    cout << a/b << endl;
+	    cout << fixed << setprecision(8) << double(a)/b <<endl;
 	}
 	return 0;
 }
