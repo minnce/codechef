@@ -7,7 +7,7 @@ void solve()
 {
     int n,a,b;
     cin >> n >> a >> b;
-    int s = 0, an =0;
+    long long s = 0, an =0;
     for (int i = 0; i < n; i++) {
         string dummy;
         cin >> dummy;
