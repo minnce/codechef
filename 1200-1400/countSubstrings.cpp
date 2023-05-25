@@ -5,20 +5,29 @@ using namespace std;
 
 void solve()
 {
-    int n;
-    string s;
-    cin >> n >> s;
-    int count = 0;
+    int n,a,b;
+    cin >> n >> a >> b;
+    long long s = 0, an =0;
     for (int i = 0; i < n; i++) {
-        string dummy = "";
-        for (int j = i; j < n; j++) {
-            dummy+=s[j];
-            if ((dummy[0] == '1') && (dummy[dummy.length()-1] == '1')) {
-                count++;
-            }
+        string dummy;
+        cin >> dummy;
+        char dummy2 = dummy[0];
+        if (dummy2 == 'E' || dummy2 == 'Q' || dummy2 == 'U' || dummy2 == 'I' || dummy2 == 'N' || dummy2 == 'O' || dummy2 == 'X') {
+            s+=a;
+        }
+        else {
+            an+=b;
         }
     }
-    cout << count << endl;
+    if (s > an) {
+        cout << "SARTHAK\n";
+    }
+    else if (an > s) {
+        cout << "ANURADHA\n";
+    }
+    else {
+        cout << "DRAW\n";
+    }
 }
 
 int main()
