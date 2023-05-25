@@ -13,7 +13,7 @@ void solve()
     else if ((a+b)%2==0&&(p+q)%2==0) {
         cout << 2 << endl;
     }
-    else if ((a+b)%2==0&&(p+q)%2==0) {
+    else if ((a+b)%2==1&&(p+q)%2==1) {
         cout << 2 << endl;
     }
     else {
