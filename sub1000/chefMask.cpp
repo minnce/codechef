@@ -11,7 +11,7 @@ void solve()
 {
     int x,y;
     cin >> x >> y;
-    if (x*100<y) {
+    if (x*100<y*10) {
         cout << "Disposable\n";
     }
     else {
