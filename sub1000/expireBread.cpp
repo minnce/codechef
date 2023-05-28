@@ -11,7 +11,7 @@ void solve()
 {
     int n,m,k;
     cin >> n >> m >> k;
-    if (n*k>=m) {
+    if (m*k>=n) {
         cout << "Yes\n";
     }
     else {
