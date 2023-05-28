@@ -11,7 +11,7 @@ void solve()
 {
     int x,y;
     cin >> x >> y;
-    if (x*3>=y) {
+    if (x*5>=y) {
         cout << "YES\n";
     }
     else {
