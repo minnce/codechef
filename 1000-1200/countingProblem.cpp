@@ -9,19 +9,29 @@ using namespace std;
 
 void solve()
 {
-    int n;
+    ll n;
     cin >> n;
-    int arr[n];
+    ll arr[n];
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
     int o = 0;
+    int e = 0;
     for (int i = 0; i < n; i++) {
         if (arr[i]%2==1) {
             o++;
         }
+        else {
+            e++;
+        }
     }
-    if (o%2==0) {
+    if (o%2==0&&e>=1&&o>=2) {
+        cout << "YES\n";
+    }
+    else if (o>=6&&o%2==0&&e==0) {
+        cout << "YES\n";
+    }
+    else if (o==2) {
         cout << "YES\n";
     }
     else {
