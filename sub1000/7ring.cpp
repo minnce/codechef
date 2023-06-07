@@ -9,7 +9,15 @@ using namespace std;
 
 void solve()
 {
-    // your code here
+    int n,x;
+    cin >> n >> x;
+    ll dummy = n*x;
+    if (dummy>=10000&&dummy<100000) {
+        cout << "YES\n";
+    }
+        else {
+            cout << "NO\n";
+        }
 }
 
 int main()
