@@ -9,7 +9,14 @@ using namespace std;
 
 void solve()
 {
-    // your code here
+    int n,x;
+    cin >> n >> x;
+    if (n>x) {
+        cout << "NO\n";
+    }
+    else {
+        cout << "YES\n";
+    }
 }
 
 int main()
