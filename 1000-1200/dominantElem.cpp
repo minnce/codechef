@@ -21,7 +21,8 @@ void solve()
     for (const auto& elem : m) {
         v.pb(elem.second);
     }
-    if (v[n-1]==v[n-2]&&v.size()!=1) {
+    sort(v.begin(),v.end());
+    if (v[v.size()-1]==v[v.size()-2]&&v.size()!=1) {
         cout << "NO\n";
     }
     else {
