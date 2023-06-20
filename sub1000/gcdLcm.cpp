@@ -22,7 +22,7 @@ typedef pair<ll,ll> pl;
 
 void solve()
 {
-    int a,b;
+    ll a,b;
     cin >> a >> b;
     cout << (gcd(a,b)) << " " << (lcm(a,b)) << endl;
 }
