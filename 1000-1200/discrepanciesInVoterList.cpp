@@ -40,10 +40,15 @@ void solve()
         cin >> d;
         m[d]++;
     }
+    vt<ll> v;
     for (auto e : m) {
         if (e.S>=2) {
-            cout << e.F << endl;
+            v.PB(e.F);
         }
+    }
+    cout << v.size() << endl;
+    for (int i = 0; i < v.size();i++) {
+        cout << v[i] << endl;
     }
 }
 
