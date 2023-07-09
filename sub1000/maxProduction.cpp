@@ -25,7 +25,7 @@ void solve()
     int d,x,y,z;
     cin >> d >> x>>y>>z;
     x*=7;
-    int d2 = y*d+z*7-d;
+    int d2 = y*d+z*(7-d);
     cout << (max(x,d2)) << endl;
 }
 
