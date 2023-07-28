@@ -5,6 +5,7 @@
 #define F first
 #define S second
 #define vt vector
+#define INS insert
 using namespace std;
 
 void solve()
