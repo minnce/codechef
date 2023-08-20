@@ -1,0 +1,70 @@
+#pragma GCC optimize("O2,no-stack-protector,unroll-loops,fast-math")
+#include <iostream>
+#include <bits/stdc++.h>
+#define ll long long
+#define PB push_back
+#define F first
+#define S second
+#define uset unordered_set
+#define umap unordered_map
+#define MP make_pair
+#define vt vector
+#define all(x) begin(x), end(x)
+#define sz(x) (int)x.size()
+#define REP(i, a) for (int i = 0; i < a; i++)
+#define pii pair<int, int>;
+#define pll pair<ll, ll>;
+
+using namespace std;
+
+typedef vector<ll> vl;
+typedef pair<ll,ll> pl;
+
+void solve()
+{
+    int n;
+    cin >> n;
+    int a=0,b=0;
+    for (int i = 0; i < n;i++) {
+        string d1,d2;
+        cin >> d1 >> d2;
+        int d3=0,d4=0;
+        for (int j = 0; j < d1.size(); j++) {
+            d3+=(int)d1[j]-48;
+        }
+        for (int j = 0; j < d2.size(); j++) {
+            d4+=(int)d2[j]-48;
+        }
+        if (d3>d4) {
+            a++;
+        }
+        else if (d4>d3) {
+            b++;
+        }
+        else {
+            a++;b++;
+        }
+    }
+    if (a>b) {
+        cout << 0 << " " << a << endl;
+    }
+    else if (b>a) {
+        cout << 1 << " " << b << endl;
+    }
+    else {
+        cout << 2 << " " << a << endl;
+    }
+}
+
+int main()
+{
+	ios::sync_with_stdio(0);
+	cin.tie(0), cout.tie(0);
+   	ll t;
+    cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
+}
