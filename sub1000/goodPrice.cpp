@@ -8,7 +8,6 @@
 #define uset unordered_set
 #define umap unordered_map
 #define MP make_pair
-#define vt vector
 #define all(x) begin(x), end(x)
 #define sz(x) (int)x.size()
 #define REP(i, a) for (int i = 0; i < a; i++)
