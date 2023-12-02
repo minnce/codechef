@@ -36,7 +36,7 @@ void solve()
         cout << 3 << endl;
     }
     else {
-        cout << 4 << endl;
+        cout<< 4 << endl;
     }
 }
 
