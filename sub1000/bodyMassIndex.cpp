@@ -22,7 +22,7 @@ typedef pair<ll,ll> pl;
 
 void solve()
 {
-    int m,h;
+    int m,h,k;
     cin >> m>>h;
     h=pow(h,2);
     m/=h;
